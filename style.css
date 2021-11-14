@@ -1,4 +1,72 @@
-body {background-color:tan;}
-h1{color:green;}
+body{
+    background-color:black;
+   
+}
+h1{
+    color: grey;
+    text-align: center;
+    margin-top: 8px;
+}
+input{
+    padding:2px; /* creates a 6px space around the input box */
+    border-radius:4px; /* creates a slight curve around the edges of the input box */
+    border-color: grey; /* changes the border of the input boxes to grey */
+} 
+#butt{                 /* div that is containing the button input element */
+    margin-left: 50px; /* creates a 50px margin on the left side of the div that contains the button input element */
+    
+}
 
+input[type="button"]{ /* button input element */
+    width: 160px;    /* button width */
+    height: 30px;    /*button height */
+    font-size: large; /*button font */
+}
 
+label{
+    width:140px; /* makes each take up that particular width, i,e, better aligment */
+    display: inline-block;
+    font-size: x-large; 
+    padding-left:50px;
+
+}
+footer{
+    font-size:x-large;
+    padding-left: 2px;
+}
+body{
+    font-size: x-large;
+    
+}
+
+#col{
+    background-color: yellow;
+}
+#col1{
+    background-color: yellow;
+}
+#col2{
+    background-color: yellow;
+}
+#col3{
+    background-color: yellow;
+}
+
+#main_con{
+    border: 1px solid black;
+    width: 550px;
+    background-color: white;
+    padding: 50px;
+    border-radius: 20px;
+    
+    
+} 
+
+#center{
+    position: fixed;
+    top: 25%;
+    left: 44%;
+    margin-top:-50px;
+    margin-left: -280px;
+    margin-bottom: -70px;
+}

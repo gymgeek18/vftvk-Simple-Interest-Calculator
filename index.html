@@ -1,16 +1,78 @@
-<html>
+<!DOCTYPE html>
+<html lang="en-US">
     <head>
-    <script src="script.js"></script>
-    <link rel="stylesheet" href="style.css">
+        <!--meta tags used to provide structured metadata about a Web page-->
+        <meta charset="UTF-8"><!--used to specify character encoding. such as ASCII, ANSI, ISO-8859-1, UTF-8, etc-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--viewport is the user's visible area of a web page.-->
+        <link rel="stylesheet" href="style.css">
+        <title>Web App – Simple Interest Calculator</title>
     </head>
     <body>
-        <h1>Simple Interest Calculator</h1>
-
-        Amount <input type="number"  id="principal">  <br/>
-        Rate <input type="number"  id="rate">  <br/>
-        No. of Years <input type="number"  id="years">  <br/>
-        Interest : <span id="result"></span><br>
-
-        <button onclick="compute()">Compute</button>
+    <div id="center">
+      <div id="main_con">
+         <h1>Simple Interest Calculator</h1>
+         <!-- start main_container-->
+        <form name=calc method=POST>
+            <div id="inner_1"> <!-- start inner_1-->
+            <label for="amount">Amount</label> 
+            <input type="number" id="amount" name="numGrab">
+            </div>             <!-- end inner_1-->
+            <br>
+            <div id="inner_2"> <!-- start inner_2-->
+            <label>Interest Rate</label> 
+            <input name="perc" type="range" id="rSlide" class="slide" min="1" max="191" value="96"> <span id="show"></span>    
+            </div>            <!-- end inner_2-->
+            <br>
+            <div id="inner_3"> <!-- start inner_3-->
+            <label>No. of Years</label>
+            <select id="select1">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+                <option value="11">11</option>
+                <option value="12">12</option>
+                <option value="13">13</option>
+                <option value="14">14</option>
+                <option value="15">15</option>
+                <option value="16">16</option>
+                <option value="17">17</option>
+                <option value="18">18</option>
+                <option value="19">19</option>
+                <option value="20">20</option>
+            </select> 
+            </select> 
+           
+            
+            </div>             <!-- end inner_3-->
+            
+            <br>
+            <div id="butt">
+           <input type="button"  value="Compute Interest" onclick="interestCalc()">
+           </div>
+           <p>
+            <!--<input type=text name=pay size=12>-->
+           </p>
+           <p id="look"></p>
+           <p id="shower"></p>
+        </form>
+                         
+        
+        
+        
+        
+        <script src="script.js"></script>
+        <footer>&copy Everyone Can Get Rich</footer>
+       </div> 
+    </div>
+                             <!--end main_container-->
+         
     </body>
+   
 </html>
